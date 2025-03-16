@@ -13,7 +13,7 @@ pipeline {
         stage('Code') {
             steps {
                 script{
-                     cloning("https://github.com/LikhithSM/node-todo-cicd.git","master")
+                     cloning("https://github.com/LikhithSM/notes-app.git","master")
                 }
             }
         }
