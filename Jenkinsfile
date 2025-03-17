@@ -1,6 +1,6 @@
 @Library("shared_lib") _
 pipeline {
-    agent {label "likhith"}
+    agent {label "static-agent"}
 
     stages {
         stage('hello'){
