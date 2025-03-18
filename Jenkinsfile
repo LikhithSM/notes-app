@@ -1,6 +1,6 @@
 @Library("shared_lib") _
 pipeline {
-    agent {label "static-agent"}
+    agent {label "master"}
 
     stages {
         stage('hello'){
@@ -13,7 +13,7 @@ pipeline {
         stage('Code') {
             steps {
                 script{
-                     cloning("https://github.com/LikhithSM/notes-app.git","main")
+                     cloning("https://github.com/LikhithSM/node-todo-cicd.git","master")
                 }
             }
         }
